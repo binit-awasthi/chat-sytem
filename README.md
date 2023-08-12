@@ -1,6 +1,12 @@
 # chat_sytem
 A Group chat program
 
+# PROJECT MEMBERS
+   BINIT AWASTHI
+   ANIK CHAUDHARY
+   KRISH KARN
+   KARNA TAMANG
+
 # PREREQUISITES
 Your compiler must contain winsock and pthread libraries 
 
