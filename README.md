@@ -2,10 +2,10 @@
 A Group chat program
 
 # PROJECT MEMBERS
-   BINIT AWASTHI
-   ANIK CHAUDHARY
-   KRISH KARN
-   KARNA TAMANG
+   1. BINIT AWASTHI
+   2. ANIK CHAUDHARY
+   3. KRISH KARN
+   4. KARNA TAMANG
 
 # PREREQUISITES
 Your compiler must contain winsock and pthread libraries 
