@@ -22,8 +22,9 @@ Your compiler must contain winsock and pthread libraries
 1. This program is for windows only.
 2. The code by default supports a local host connection where the server and client programs run on the same device.
 3. For local host connection run the server program in one terminal and the client program on several different terminal windows.
+   where each client terminal client acts as an individual client.
 
-4. FOR CONNECTION BETWEEN DIFFERENT DEVICES:
+5. FOR CONNECTION BETWEEN DIFFERENT DEVICES:
 
    1. Simply modify the SERVER_IP macro in the client code to store the server device's ipv4 address.
    2. Run the server code on a device, and the same client code on different devices with the modified ipv4 address of the server device.
