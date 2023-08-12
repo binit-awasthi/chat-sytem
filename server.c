@@ -82,6 +82,7 @@ int main()
             return 1;
         }
 
+        // clients[num_clients++] = client_socket;
 
         pthread_t thread;
         if (pthread_create(&thread, NULL, handle_client, (void *)&client_socket) != 0)
@@ -146,13 +147,7 @@ void *handle_client(void *socket_ptr)
             if (is_valid_credentials(username, password))
             {
                 send(client_socket, "Login successful", strlen("Login successful"), 0);
-                //
-                char welcome[50];
-                strcpy(welcome, username);
-                strcat("Logged in as: ", username);
-                send(client_socket, welcome, strlen(welcome), 0);
-                //
-                
+
                 strcpy(current_username, username); // Set the current username
             }
             else
