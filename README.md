@@ -14,7 +14,7 @@ Your compiler must contain winsock and pthread libraries
 
   where filepath is the respective path of client or server program.
 
-3. Now to run the program simply enter (on separate terminal windows):
+2. Now to run the program simply enter (on separate terminal windows):
    For server: ".\server"
    For client: ".\client"
 
