@@ -2,10 +2,10 @@
 A Group chat program
 
 # PROJECT MEMBERS
-   1. BINIT AWASTHI
-   2. ANIK CHAUDHARY
-   3. KRISH KARN
-   4. KARNA TAMANG
+   1. BINIT AWASTHI   (https://github.com/Polarizer5)
+   2. ANIK CHAUDHARY  (https://github.com/anik-c)
+   3. KRISH KARN      (https://github.com/Chriskarna)
+   4. KARNA TAMANG    
 
 # PREREQUISITES
 Your compiler must contain winsock and pthread libraries 
