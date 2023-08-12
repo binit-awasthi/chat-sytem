@@ -31,8 +31,8 @@ Your compiler must contain winsock and pthread libraries
 6. The program supports both lan and wan communication
 
 7. For wan connection:
-    Your router must support port forwarding (not set by default in most routers)
-    The program lacks appropriate security mechanisms, so recommended to not use this for remote communication
+    Your router must support port forwarding (not set by default in most routers).
+    The program lacks appropriate security mechanisms, so it is recommended to not use this for remote communication
 
 8. For LAN or communication on the same network
    Use the same approach as described earlier in point 4.
