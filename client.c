@@ -1,4 +1,4 @@
-//CLIENT
+// CLIENT
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,15 +47,18 @@ int main()
         system("cls");
         lsflag = true;
         char choice = login_signup_choice();
-        SOCKET sock = connection();
+        SOCKET sock;
+
         switch (choice)
         {
         case '1':
+            sock = connection();
             handle_login(sock);
             after_login_signup(&sock, &wsa);
             break;
 
         case '2':
+            sock = connection();
             handle_signup(sock);
             after_login_signup(&sock, &wsa);
             break;
@@ -76,7 +79,7 @@ int main()
 char login_signup_choice()
 {
     char choice;
-    printf("OPTIONS:\n\n1. Login\n2. Signup\n3. Exit\n\n");
+    printf("OPTIONS:\n\n(1) Login\n(2) Signup\n(3) Exit\n\n");
     printf("SELECT: ");
 
     choice = getch();
@@ -168,7 +171,6 @@ void handle_signup(SOCKET client_socket)
     if (strcmp(buffer, "Signup failed") == 0)
     {
         lsflag = false;
-        // printf("signup failed");
         usleep(1000000);
         closesocket(client_socket);
         WSACleanup();
@@ -206,8 +208,6 @@ void *send_messages(void *socket_ptr)
         if (sendresult == SOCKET_ERROR)
         {
             printf("Send failed\n");
-            closesocket(client_socket);
-            WSACleanup();
             return NULL;
         }
 
@@ -215,8 +215,6 @@ void *send_messages(void *socket_ptr)
         else if (sendresult < 0)
         {
             printf("Error writing to socket");
-            closesocket(client_socket);
-            WSACleanup();
             return NULL;
         }
     }
