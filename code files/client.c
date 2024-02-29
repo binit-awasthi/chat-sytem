@@ -13,7 +13,7 @@
 #define BUFFER_SIZE 1024
 #define PORT 9000
 #define USERNAME_SIZE 100
-#define SERVER_IP "127.0.0.1"
+#define SERVER_IP "127.0.0.1" // default (local host)
 #define delay 50000
 
 // to link winsock2 librabrary
